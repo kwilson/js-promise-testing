@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test App</title>
+        <script src="../../../Scripts/angular.js"></script>        
+
+        <script src="controllers/timeline-controller.js"></script>
+        <script src="directives/timeline-item.js"></script>
+        <script src="models/filter-option.js"></script>
+        <script src="models/match-mode.js"></script>
+        <script src="models/match-result.js"></script>
+        <script src="models/timeline-filter.js"></script>
+        <script src="services/timeline-service.js"></script>
+        <script src="timeline.js"></script>
+
+        <!--<script src="/bundles/timeline"></script>-->
+
+        <script src="sample-app.js"></script>
+        
+        <style>
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 84%;
+            }
+        </style>
+        <link href="timeline.min.css" rel="stylesheet"/>
+    </head>
+<body ng-app="testApp">
+    <h1>Timeline</h1>
+
+    <div ng-controller="PeopleController as vm">
+
+    </div>
+</body>
+</html>

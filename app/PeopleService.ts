@@ -1,7 +1,7 @@
-module Test {
+module Test.Services {
 
     export interface IPeopleService {
-        getData(): ng.IPromise<IPerson>
+        getPeople(): ng.IPromise<IPerson[]>
     }   
 
     export class PeopleService implements IPeopleService {
@@ -15,11 +15,11 @@ module Test {
             private $http: ng.IHttpService) {
         }
 
-        getData(): ng.IPromise<IPerson> {
+        getPeople(): ng.IPromise<IPerson[]> {
             var url = "/api/people";
-            return new this.$q<IPerson>((resolve: ng.IQResolveReject<IPerson>, reject: ng.IQResolveReject<string>) => {
+            return new this.$q<IPerson[]>((resolve: ng.IQResolveReject<IPerson[]>, reject: ng.IQResolveReject<string>) => {
                 this.$http
-                    .get<IPerson>(url)
+                    .get<IPerson[]>(url)
                     .success((data) => {
                         resolve(data);
                     })

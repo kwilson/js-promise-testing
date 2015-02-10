@@ -12,6 +12,8 @@
     "tests"
   ],
   "dependencies": {
-    "DefinitelyTyped": "*"
+    "DefinitelyTyped": "*",
+    "angular": "*",
+    "angular-mocks": "*"
   }
 }
