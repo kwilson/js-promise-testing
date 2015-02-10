@@ -1,0 +1,17 @@
+{
+  "name": "js-promise-testing",
+  "version": "1.0.0",
+  "authors": [
+    "Kevin Wilson"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "DefinitelyTyped": "*"
+  }
+}
